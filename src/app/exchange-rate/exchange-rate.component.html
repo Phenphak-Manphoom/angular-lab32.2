@@ -1,0 +1,14 @@
+<form [formGroup]="form" (submit)="convertCurrency(form)">
+    <h1>Exchange Rate</h1>
+    <div>
+        <input formControl="fromCurrency">
+        <input placeholder="THB" disabled>
+    </div>
+    <div>
+        <input>
+        <input placeholder="EUR" disabled>
+    </div>
+    <div>
+        <button type="submit">CONVERT</button>
+    </div>
+</form>
